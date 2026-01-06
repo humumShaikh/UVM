@@ -1,0 +1,33 @@
+class xor_environment extends uvm_env;
+
+    `uvm_component_utils(xor_environment);
+
+    xor_agent       agent;
+    xor_scoreboard  scb;
+
+    function new(string name = "xor_environment", uvm_component parent);
+        super.new(name, parent);
+        `uvm_info("Environment Class" , "Constructor" , UVM_LOW)
+    endfunction: new
+
+
+    function void build_phase(uvm_phase phase);
+        super.build_phase(phase);
+        `uvm_info("Environment Class" , "Build Phase" , UVM_LOW)
+
+        agent   =   xor_agent::type_id::create("agent" , this);
+        scb     =   xor_scoreboard::type_id::create("scb" , this);
+    endfunction: build_phase
+
+
+    function void connect_phase(uvm_phase phase);
+        super.connect_phase(phase);
+        `uvm_info("Environment Class" , "Connect Phase" , UVM_LOW)
+        
+        agent.mon.item_collected_port.connect(scb.item_collected_export);
+    endfunction: connect_phase
+    
+    
+
+    
+endclass: xor_environment
