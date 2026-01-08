@@ -16,3 +16,4 @@
 14.  Once vscode is open, press  ctrl + `  to open the terminal in vscode platform.
 15.  The VSCode terminal will be open and henceforth we will be using this vscode terminal, you may close the windows terminal in the background.
 16.  Now all the commands from here are supposed to be typed in the VScode terminal
+17.  Type in terminal  vlib  <name_you_want_to_give_to_your_work_library>      (this is necessary, recommended to give the name of your project i.e. <and_gate_lib>)
