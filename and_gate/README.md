@@ -13,3 +13,6 @@
 11.  This is where all your project files will be created and saved.
 12.  now type in the terminal :   code .      (this will open vscode from that following directory)
 13.  This will make the vscode's terminal open in that directory
+14.  Once vscode is open, press  ctrl + `  to open the terminal in vscode platform.
+15.  The VSCode terminal will be open and henceforth we will be using this vscode terminal, you may close the windows terminal in the background.
+16.  Now all the commands from here are supposed to be typed in the VScode terminal
