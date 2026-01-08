@@ -19,3 +19,12 @@
 17.  Type in terminal  vlib  <name_you_want_to_give_to_your_work_library>      (this is necessary, recommended to give the name of your project i.e. <and_gate_lib>)
 18.  This will make the work library alias as and_gate_lib  as per questa's requirements.
 19.  now if you have the design and sim files just copy it from the windows gui into this project folder (not the library folder, just outside it)
+20.  If you want to create a new file type  :    code  <file_name.sv>
+21.  The file will be created , save it and type in it if required.
+22.  To compile a file  :    vlog -lint -sv -work <project_lib> <file_name.sv>  (this will compile the file_name.sv  file)
+23.  For example  :    vlog -lint -sv -work and_gate_lib  and_gate.sv
+24.  If you want to compile multiple files then just add the file names in the end
+25.  Note  :  the '-lint' is optional but is highly recommended
+26.  To run a file :   vsim -c -voptargs=+acc <project_lib>.top_file_name
+27.  For example  :    vsim -c -voptargs=+acc and_gate_lib.and_gate_tb
+28.  The '-c' part is there to run/open questa on your vscode terminal, if the '-c' is not mentioned then a questa window will be opened
