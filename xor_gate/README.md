@@ -26,7 +26,7 @@
 24.  If you want to compile multiple files then just add the file names in the end
 25.  Note  :  the '-lint' is optional but is highly recommended
 26.  To run a file :   vsim -c -voptargs=+acc <project_lib>.top_file_name
-27.  For example  :    vsim -c -voptargs=+acc and_gate_lib.and_gate_tb
+27.  For example  :    vsim -c -voptargs=+acc xor_gate_lib.xor_gate_tb
 28.  The '-c' part is there to run/open questa on your vscode terminal, if the '-c' is not mentioned then a questa window will be opened
 29.  The '-voptargs=+acc' is there to disable optimization because optimizing might remove some signals thinking they are not necessary.
 30.  Now once the questa terminal is there, type :    add wave *    (to add all the signals in the simulation window, if you don't want that then you may skip this step)
