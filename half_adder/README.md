@@ -23,7 +23,7 @@
 20.  If you want to create a new file type  :    code  <file_name.sv>
 21.  The file will be created , save it and type in it if required.
 22.  To compile a file  :    vlog -lint -sv -work <project_lib> <file_name.sv>  (this will compile the file_name.sv  file)
-23.  For example  :    vlog -lint -sv -work half_adder_lib  and_gate.sv
+23.  For example  :    vlog -lint -sv -work half_adder_lib  half_adder.sv
 24.  If you want to compile multiple files then just add the file names in the end
 25.  Note  :  the '-lint' is optional but is highly recommended
 26.  To run a file :   vsim -c -voptargs=+acc <project_lib>.top_file_name
