@@ -22,7 +22,7 @@ class spi_m_agent extends uvm_agent;
     endfunction : build_phase
 
 
-    function void connect_phase(uvm_phase phase);
+    function void connect_phase(uvm_phase phase);                            //the connect phase is supposed to connect the driver and the sequencer
         super.connect_phase(phase);
 
         drv.seq_item_port.connect(seqr.seq_item_export);
@@ -30,6 +30,7 @@ class spi_m_agent extends uvm_agent;
 
 
 endclass : spi_m_agent
+
 
 
 
