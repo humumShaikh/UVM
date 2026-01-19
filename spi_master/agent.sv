@@ -1,11 +1,11 @@
 //The agent is a construct for initiating the driver , monitor and sequencer
 
-class spi_m_agent extends uvm_agent;
+class spi_m_agent extends uvm_agent;        
 
-    `uvm_component_utils(spi_m_agent)
+    `uvm_component_utils(spi_m_agent)                                //registering the spi_m_agent in the utils
 
-    spi_m_driver    drv;
-    spi_m_monitor   mon;
+    spi_m_driver    drv;                                            //creating an object drv of class spi_m_driver
+    spi_m_monitor   mon;    
     spi_m_sequencer seqr;
 
     function new(string name = "spi_m_agent" , uvm_component parent);
@@ -30,3 +30,4 @@ class spi_m_agent extends uvm_agent;
 
 
 endclass : spi_m_agent
+
