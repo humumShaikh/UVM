@@ -5,10 +5,10 @@ class spi_m_agent extends uvm_agent;
     `uvm_component_utils(spi_m_agent)                                //registering the spi_m_agent in the utils
 
     spi_m_driver    drv;                                            //creating an object drv of class spi_m_driver
-    spi_m_monitor   mon;    
-    spi_m_sequencer seqr;
+    spi_m_monitor   mon;                                            //creating an object mon of class spi_m_monitor
+    spi_m_sequencer seqr;                                           //creating an object seqr of class spi_m_sequencer 
 
-    function new(string name = "spi_m_agent" , uvm_component parent);
+    function new(string name = "spi_m_agent" , uvm_component parent);        //constructor
         super.new(name , parent);
     endfunction : new
 
@@ -30,4 +30,5 @@ class spi_m_agent extends uvm_agent;
 
 
 endclass : spi_m_agent
+
 
