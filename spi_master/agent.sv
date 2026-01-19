@@ -1,3 +1,5 @@
+//The agent is a construct for initiating the driver , monitor and sequencer
+
 class spi_m_agent extends uvm_agent;
 
     `uvm_component_utils(spi_m_agent)
@@ -25,5 +27,6 @@ class spi_m_agent extends uvm_agent;
 
         drv.seq_item_port.connect(seqr.seq_item_export);
     endfunction : connect_phase
+
 
 endclass : spi_m_agent
