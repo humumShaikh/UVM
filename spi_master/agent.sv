@@ -9,7 +9,7 @@ class spi_m_agent extends uvm_agent;
     spi_m_sequencer seqr;                                           //creating an object seqr of class spi_m_sequencer 
 
     function new(string name = "spi_m_agent" , uvm_component parent);        //constructor
-        super.new(name , parent);
+        super.new(name , parent);                                            //calling the parent class function
     endfunction : new
 
 
@@ -30,5 +30,6 @@ class spi_m_agent extends uvm_agent;
 
 
 endclass : spi_m_agent
+
 
 
