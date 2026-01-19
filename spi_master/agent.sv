@@ -13,7 +13,7 @@ class spi_m_agent extends uvm_agent;
     endfunction : new
 
 
-    function void build_phase(uvm_phase phase);                                //the build phase is supposed to instantiate the components of the agent and allocate them memory
+    function void build_phase(uvm_phase phase);                                //the build phase is supposed to instantiate the components of the agent - drv , mon , seqr
         super.build_phase(phase);
 
         drv =   spi_m_driver::type_id::create("drv" , this);
@@ -30,6 +30,7 @@ class spi_m_agent extends uvm_agent;
 
 
 endclass : spi_m_agent
+
 
 
 
