@@ -1,6 +1,6 @@
 class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_driver extends from the UVM base class of uvm_driver
 
-    `uvm_component_utils(xor_driver)
+    `uvm_component_utils(xor_driver)                                //registering this derived class in the UVM Factory
 
     virtual XOR_INTF vif;
 
@@ -35,3 +35,4 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
 endclass : xor_driver
+
