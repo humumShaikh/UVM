@@ -29,12 +29,13 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
             seq_item_port.get_next_item(I);                                    //getting the next sequence item from the sequencer class 
             vif.A <= I.A;                                                        //driving (wiggling) the pins of the interface so that the dut can be stimulated
             vif.B <= I.B;
-            seq_item_port.item_done();
+            seq_item_port.item_done();                                            //necessary to call this method to unblock the sequencer
         end
     endtask : run_phase
 
 
 endclass : xor_driver
+
 
 
 
