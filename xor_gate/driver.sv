@@ -20,7 +20,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
     endfunction : build_phase
 
 
-    task run_phase(uvm_phase phase);
+    task run_phase(uvm_phase phase);                                        //run phase function
         forever
         begin
             @(posedge vif.clk);
@@ -35,6 +35,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
 endclass : xor_driver
+
 
 
 
