@@ -12,7 +12,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
     endfunction : new
 
 
-    function void build_phase(uvm_phase phase);
+    function void build_phase(uvm_phase phase);                            //build phase function
         super.build_phase(phase);
         `uvm_info("Driver Class" , "Build Phase" , UVM_LOW)
 
@@ -35,6 +35,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
 endclass : xor_driver
+
 
 
 
