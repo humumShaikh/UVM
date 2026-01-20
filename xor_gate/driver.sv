@@ -13,7 +13,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
     function void build_phase(uvm_phase phase);                            //build phase function
-        super.build_phase(phase);
+        super.build_phase(phase);                                            //calling the base class constructor
         `uvm_info("Driver Class" , "Build Phase" , UVM_LOW)
 
         uvm_config_db #(virtual XOR_INTF)::get(this , "" , "vif" , vif);
@@ -35,6 +35,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
 endclass : xor_driver
+
 
 
 
