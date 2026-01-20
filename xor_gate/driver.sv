@@ -16,7 +16,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
         super.build_phase(phase);                                            //calling the base class constructor
         `uvm_info("Driver Class" , "Build Phase" , UVM_LOW)
 
-        uvm_config_db #(virtual XOR_INTF)::get(this , "" , "vif" , vif);
+        uvm_config_db #(virtual XOR_INTF)::get(this , "" , "vif" , vif);        //fetching the virtual interface which will be set from the top module and assigning it to the local virtual interface handle
     endfunction : build_phase
 
 
@@ -35,6 +35,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
 endclass : xor_driver
+
 
 
 
