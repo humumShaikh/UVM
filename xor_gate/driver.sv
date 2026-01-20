@@ -27,7 +27,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
             `uvm_info("Driver Class" , "Run Phase" , UVM_LOW)
             I = xor_seq_item::type_id::create("I");                            //creating a new object but using the same handle 'I' 
             seq_item_port.get_next_item(I);                                    //getting the next sequence item from the sequencer class 
-            vif.A <= I.A;
+            vif.A <= I.A;                                                        //driving (wiggling) the pins of the interface so that the dut can be stimulated
             vif.B <= I.B;
             seq_item_port.item_done();
         end
@@ -35,6 +35,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
 endclass : xor_driver
+
 
 
 
