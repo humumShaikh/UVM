@@ -1,4 +1,4 @@
-class xor_driver extends uvm_driver #(xor_seq_item);
+class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_driver extends from the UVM base class of uvm_driver
 
     `uvm_component_utils(xor_driver)
 
@@ -32,5 +32,6 @@ class xor_driver extends uvm_driver #(xor_seq_item);
             seq_item_port.item_done();
         end
     endtask : run_phase
+
 
 endclass : xor_driver
