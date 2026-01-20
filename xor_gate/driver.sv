@@ -26,7 +26,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
             @(posedge vif.clk);
             `uvm_info("Driver Class" , "Run Phase" , UVM_LOW)
             I = xor_seq_item::type_id::create("I");                            //creating a new object but using the same handle 'I' 
-            seq_item_port.get_next_item(I);
+            seq_item_port.get_next_item(I);                                    //getting the next sequence item from the sequencer class 
             vif.A <= I.A;
             vif.B <= I.B;
             seq_item_port.item_done();
@@ -35,6 +35,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
 endclass : xor_driver
+
 
 
 
