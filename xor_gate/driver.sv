@@ -7,7 +7,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
     xor_seq_item    I;                                                //creating a handle to a sequence item and calling it as 'I'
 
     function new(string name = "xor_driver" , uvm_component parent);    //constructor
-        super.new(name , parent);
+        super.new(name , parent);                                        //calling the base class constructor
         `uvm_info("Driver Class" , "Constructor" , UVM_LOW)
     endfunction : new
 
@@ -35,6 +35,7 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
 
 
 endclass : xor_driver
+
 
 
 
