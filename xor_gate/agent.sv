@@ -1,8 +1,8 @@
 class xor_agent extends uvm_agent;                    //class xor_agent is derived from the uvm base class of uvm_agent
 
-    `uvm_component_utils(xor_agent)
+    `uvm_component_utils(xor_agent)                    //factory registeration of xor_agent
 
-    xor_driver      drv;
+    xor_driver      drv;                                //creating a handle of the xor_driver and assigning it the handle drv
     xor_monitor     mon;
     xor_sequencer   seqr;
 
@@ -31,3 +31,4 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
 
 endclass : xor_agent
+
