@@ -4,7 +4,7 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
     xor_driver      drv;                                //creating a handle of the xor_driver named as drv
     xor_monitor     mon;                                //creating a handle of the xor_monitor named as mon
-    xor_sequencer   seqr;
+    xor_sequencer   seqr;                                //creating a handle of the xor_sequencer named as seqr
 
     function new(string name = "xor_agent" , uvm_component parent);
         super.new(name , parent);
@@ -31,5 +31,6 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
 
 endclass : xor_agent
+
 
 
