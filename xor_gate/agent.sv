@@ -6,8 +6,8 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
     xor_monitor     mon;                                //creating a handle of the xor_monitor named as mon
     xor_sequencer   seqr;                                //creating a handle of the xor_sequencer named as seqr
 
-    function new(string name = "xor_agent" , uvm_component parent);
-        super.new(name , parent);
+    function new(string name = "xor_agent" , uvm_component parent);        //constructor
+        super.new(name , parent);                                            //calling the base class constructor
         `uvm_info("Agent Class" , "Constructor" , UVM_LOW)
     endfunction : new
 
@@ -31,6 +31,7 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
 
 endclass : xor_agent
+
 
 
 
