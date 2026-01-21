@@ -1,4 +1,4 @@
-class xor_agent extends uvm_agent;
+class xor_agent extends uvm_agent;                    //class xor_agent is derived from the uvm base class of uvm_agent
 
     `uvm_component_utils(xor_agent)
 
@@ -28,5 +28,6 @@ class xor_agent extends uvm_agent;
 
         drv.seq_item_port.connect(seqr.seq_item_export);
     endfunction : connect_phase
+
 
 endclass : xor_agent
