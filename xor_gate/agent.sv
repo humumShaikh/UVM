@@ -12,7 +12,7 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
     endfunction : new
 
 
-    function void build_phase(uvm_phase phase);
+    function void build_phase(uvm_phase phase);                                //build phase function
         super.build_phase(phase);
         `uvm_info("Agent Class" , "Build Phase" , UVM_LOW)
 
@@ -31,6 +31,7 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
 
 endclass : xor_agent
+
 
 
 
