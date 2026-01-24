@@ -6,7 +6,7 @@ class xor_environment extends uvm_env;                                        //
     xor_scoreboard  scb;                                                        //creating a handle named 'scb' of the xor_scoreboard class
 
     function new(string name = "xor_environment", uvm_component parent);        //constructor
-        super.new(name, parent);
+        super.new(name, parent);                                                //calling the base class constructor
         `uvm_info("Environment Class" , "Constructor" , UVM_LOW)
     endfunction: new
 
@@ -31,6 +31,7 @@ class xor_environment extends uvm_env;                                        //
 
     
 endclass: xor_environment
+
 
 
 
