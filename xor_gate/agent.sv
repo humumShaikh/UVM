@@ -24,13 +24,14 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
     function void connect_phase(uvm_phase phase);                                    //connect phase function
         super.connect_phase(phase);                                                    //calling the connect_phase function of the parent class
-        `uvm_info("Agent Class" , "Connect Phase" , UVM_LOW)
+        `uvm_info("Agent Class" , "Connect Phase" , UVM_LOW)                            //display message from UVM Library
 
         drv.seq_item_port.connect(seqr.seq_item_export);
     endfunction : connect_phase
 
 
 endclass : xor_agent
+
 
 
 
