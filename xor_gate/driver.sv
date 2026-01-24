@@ -33,8 +33,10 @@ class xor_driver extends uvm_driver #(xor_seq_item);                //class xor_
         end
     endtask : run_phase
 
+    //note - the driver's sequence item port i.e. seq_item_port is by default and no need to instantiate this port of driver
 
 endclass : xor_driver
+
 
 
 
