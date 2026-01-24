@@ -1,4 +1,4 @@
-class xor_environment extends uvm_env;
+class xor_environment extends uvm_env;                                        //extending the xor_environment from the uvm parent class i.e. deriving it from the uvm parent class
 
     `uvm_component_utils(xor_environment);
 
@@ -31,3 +31,4 @@ class xor_environment extends uvm_env;
 
     
 endclass: xor_environment
+
