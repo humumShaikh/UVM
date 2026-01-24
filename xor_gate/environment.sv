@@ -2,7 +2,7 @@ class xor_environment extends uvm_env;                                        //
 
     `uvm_component_utils(xor_environment);                                    //registering this class in the UVM factory
 
-    xor_agent       agent;
+    xor_agent       agent;                                                      //creating a handle named 'agent' of the xor_agent class
     xor_scoreboard  scb;
 
     function new(string name = "xor_environment", uvm_component parent);
@@ -31,5 +31,6 @@ class xor_environment extends uvm_env;                                        //
 
     
 endclass: xor_environment
+
 
 
