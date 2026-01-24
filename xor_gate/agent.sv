@@ -16,9 +16,9 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
         super.build_phase(phase);                                                //calling the build_phase function of the parent class 
         `uvm_info("Agent Class" , "Build Phase" , UVM_LOW)
 
-        drv = xor_driver::type_id::create("drv" , this);                            //creating a an object of driver class
-        mon = xor_monitor::type_id::create("mon" , this);
-        seqr = xor_sequencer::type_id::create("seqr" , this);
+        drv = xor_driver::type_id::create("drv" , this);                            //creating an object of driver class
+        mon = xor_monitor::type_id::create("mon" , this);                            //creating an object of monitor class 
+        seqr = xor_sequencer::type_id::create("seqr" , this);                        //creating an object of sequencer class
     endfunction : build_phase
 
 
@@ -31,6 +31,7 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
 
 endclass : xor_agent
+
 
 
 
