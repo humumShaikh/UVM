@@ -13,7 +13,7 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
 
     function void build_phase(uvm_phase phase);                                //build phase function
-        super.build_phase(phase);
+        super.build_phase(phase);                                                //calling the build_phase function of the parent class 
         `uvm_info("Agent Class" , "Build Phase" , UVM_LOW)
 
         drv = xor_driver::type_id::create("drv" , this);
@@ -31,6 +31,7 @@ class xor_agent extends uvm_agent;                    //class xor_agent is deriv
 
 
 endclass : xor_agent
+
 
 
 
