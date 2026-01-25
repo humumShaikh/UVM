@@ -4,7 +4,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
     virtual XOR_INTF vif;                                                        //creating a virtual handle to the xor_intf and calling it as vif
 
-    xor_seq_item    I;
+    xor_seq_item    I;                                                            //creating a handle named 'I' of the xor_seq_item class
 
     uvm_analysis_port #(xor_seq_item) item_collected_port;
 
@@ -39,5 +39,6 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
