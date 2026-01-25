@@ -21,7 +21,7 @@ class xor_environment extends uvm_env;                                        //
 
 
     function void connect_phase(uvm_phase phase);                                    //connect_phase function
-        super.connect_phase(phase);
+        super.connect_phase(phase);                                                    //calling the connect_phase function of the parent class
         `uvm_info("Environment Class" , "Connect Phase" , UVM_LOW)
         
         agent.mon.item_collected_port.connect(scb.item_collected_export);
@@ -31,6 +31,7 @@ class xor_environment extends uvm_env;                                        //
 
     
 endclass: xor_environment
+
 
 
 
