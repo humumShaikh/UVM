@@ -20,7 +20,7 @@ class xor_environment extends uvm_env;                                        //
     endfunction: build_phase
 
 
-    function void connect_phase(uvm_phase phase);
+    function void connect_phase(uvm_phase phase);                                    //connect_phase function
         super.connect_phase(phase);
         `uvm_info("Environment Class" , "Connect Phase" , UVM_LOW)
         
@@ -31,6 +31,7 @@ class xor_environment extends uvm_env;                                        //
 
     
 endclass: xor_environment
+
 
 
 
