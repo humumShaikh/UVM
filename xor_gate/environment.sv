@@ -16,7 +16,7 @@ class xor_environment extends uvm_env;                                        //
         `uvm_info("Environment Class" , "Build Phase" , UVM_LOW)
 
         agent   =   xor_agent::type_id::create("agent" , this);                    //alloting memory to the handle of the agent class
-        scb     =   xor_scoreboard::type_id::create("scb" , this);
+        scb     =   xor_scoreboard::type_id::create("scb" , this);                    //allotting memory to the handle of the scoreboard class
     endfunction: build_phase
 
 
@@ -31,6 +31,7 @@ class xor_environment extends uvm_env;                                        //
 
     
 endclass: xor_environment
+
 
 
 
