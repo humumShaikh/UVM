@@ -1,6 +1,6 @@
 class xor_monitor extends uvm_monitor;                                        //extending the xor_monitor class or deriving it from the parent class of uvm_monitor
 
-    `uvm_component_utils(xor_monitor)
+    `uvm_component_utils(xor_monitor)                                            //registering this class xor_monitor in the uvm factory
 
     virtual XOR_INTF vif;
 
@@ -39,3 +39,4 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
