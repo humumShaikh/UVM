@@ -1,4 +1,4 @@
-class xor_monitor extends uvm_monitor;
+class xor_monitor extends uvm_monitor;                                        //extending the xor_monitor class or deriving it from the parent class of uvm_monitor
 
     `uvm_component_utils(xor_monitor)
 
@@ -36,5 +36,6 @@ class xor_monitor extends uvm_monitor;
             item_collected_port.write(I);
         end
     endtask : run_phase
+
 
 endclass : xor_monitor
