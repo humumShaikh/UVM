@@ -24,13 +24,14 @@ class xor_environment extends uvm_env;                                        //
         super.connect_phase(phase);                                                    //calling the connect_phase function of the parent class
         `uvm_info("Environment Class" , "Connect Phase" , UVM_LOW)
         
-        agent.mon.item_collected_port.connect(scb.item_collected_export);
+        agent.mon.item_collected_port.connect(scb.item_collected_export);                //connecting the monitor's item_collected_port to the scoreboard's item_collected_export (TLM port)
     endfunction: connect_phase
     
     
 
     
 endclass: xor_environment
+
 
 
 
