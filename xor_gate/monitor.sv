@@ -2,7 +2,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
     `uvm_component_utils(xor_monitor)                                            //registering this class xor_monitor in the uvm factory
 
-    virtual XOR_INTF vif;
+    virtual XOR_INTF vif;                                                        //creating a virtual handle to the xor_intf and calling it as vif
 
     xor_seq_item    I;
 
@@ -39,4 +39,5 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
