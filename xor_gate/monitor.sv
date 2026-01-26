@@ -18,7 +18,7 @@ class xor_monitor extends uvm_monitor;                                        //
         super.build_phase(phase);                                                    //calling the parent class build_phase function
         `uvm_info("Monitor Class" , "Build Phase" , UVM_LOW)
 
-        item_collected_port = new("item_collected_port" , this);
+        item_collected_port = new("item_collected_port" , this);                    //allocating memory to the item_collected_port (TLM) of monitor
         uvm_config_db #(virtual XOR_INTF)::get(this , "" , "vif" , vif);
     endfunction : build_phase
 
@@ -39,6 +39,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
 
