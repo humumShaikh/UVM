@@ -30,7 +30,7 @@ class xor_monitor extends uvm_monitor;                                        //
             #1ns;                                                                    //wait 1ns
             `uvm_info("Monitor Class" , "Run Phase" , UVM_LOW)                            //print info message using uvm_macro : `uvm_info
             I = xor_seq_item::type_id::create("I");                                        //allot memory to the xor_Seq_item handle named 'I'
-            I.A = vif.A;
+            I.A = vif.A;                                                                    //assigning the stimulus received via the interface to the xor_seq_item attributes
             I.B = vif.B;
             I.Y = vif.Y;
             item_collected_port.write(I);
@@ -39,6 +39,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
 
