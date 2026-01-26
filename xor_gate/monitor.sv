@@ -19,7 +19,7 @@ class xor_monitor extends uvm_monitor;                                        //
         `uvm_info("Monitor Class" , "Build Phase" , UVM_LOW)
 
         item_collected_port = new("item_collected_port" , this);                    //allocating memory to the item_collected_port (TLM) of monitor
-        uvm_config_db #(virtual XOR_INTF)::get(this , "" , "vif" , vif);
+        uvm_config_db #(virtual XOR_INTF)::get(this , "" , "vif" , vif);            //fetching the virtual interface and assigning the virtual handle to it, the virtual interface is passed from the top module
     endfunction : build_phase
 
 
@@ -39,6 +39,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
 
