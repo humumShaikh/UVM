@@ -1,6 +1,6 @@
 class xor_scoreboard extends uvm_scoreboard;                                        //extending / deriving the xor_scoreboard class from the parent class of uvm_scoreboard
 
-    `uvm_component_utils(xor_scoreboard)
+    `uvm_component_utils(xor_scoreboard)                                            //factory registration of xor_scoreboard class
 
     uvm_analysis_imp #(xor_seq_item , xor_scoreboard) item_collected_export;
 
@@ -46,3 +46,4 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
 
 endclass : xor_scoreboard
+
