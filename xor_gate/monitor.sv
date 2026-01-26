@@ -9,7 +9,7 @@ class xor_monitor extends uvm_monitor;                                        //
     uvm_analysis_port #(xor_seq_item) item_collected_port;                        //creating a handle to UVM TLM port and calling it as item_collected_port 
 
     function new(string name = "xor_monitor" , uvm_component parent);                //constructor
-        super.new(name , parent);
+        super.new(name , parent);                                                    //calling the base/parent class constructor of uvm_monitor
         `uvm_info("Monitor Class" , "Constructor" , UVM_LOW)
     endfunction : new
 
@@ -39,6 +39,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
 
