@@ -26,8 +26,8 @@ class xor_monitor extends uvm_monitor;                                        //
     task run_phase(uvm_phase phase);                                                //run_phase task of our class xor_monitor
         forever
         begin
-            @(posedge vif.clk);
-            #1ns;
+            @(posedge vif.clk);                                                        //wait till the posedge of clk is detected in the virtual interface
+            #1ns;                                                                    //wait 1ns
             `uvm_info("Monitor Class" , "Run Phase" , UVM_LOW)
             I = xor_seq_item::type_id::create("I");
             I.A = vif.A;
@@ -39,6 +39,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
 
