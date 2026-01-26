@@ -1,4 +1,4 @@
-class xor_scoreboard extends uvm_scoreboard;
+class xor_scoreboard extends uvm_scoreboard;                                        //extending / deriving the xor_scoreboard class from the parent class of uvm_scoreboard
 
     `uvm_component_utils(xor_scoreboard)
 
@@ -42,6 +42,7 @@ class xor_scoreboard extends uvm_scoreboard;
             $display("----------------------------------------------------------------------------------");
         end
     endtask : run_phase
+
 
 
 endclass : xor_scoreboard
