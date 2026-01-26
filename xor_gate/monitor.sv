@@ -23,7 +23,7 @@ class xor_monitor extends uvm_monitor;                                        //
     endfunction : build_phase
 
 
-    task run_phase(uvm_phase phase);
+    task run_phase(uvm_phase phase);                                                //run_phase task of our class xor_monitor
         forever
         begin
             @(posedge vif.clk);
@@ -39,6 +39,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
 
