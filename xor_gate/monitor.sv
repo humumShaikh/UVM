@@ -29,7 +29,7 @@ class xor_monitor extends uvm_monitor;                                        //
             @(posedge vif.clk);                                                        //wait till the posedge of clk is detected in the virtual interface
             #1ns;                                                                    //wait 1ns
             `uvm_info("Monitor Class" , "Run Phase" , UVM_LOW)                            //print info message using uvm_macro : `uvm_info
-            I = xor_seq_item::type_id::create("I");        
+            I = xor_seq_item::type_id::create("I");                                        //allot memory to the xor_Seq_item handle named 'I'
             I.A = vif.A;
             I.B = vif.B;
             I.Y = vif.Y;
@@ -39,6 +39,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
 
