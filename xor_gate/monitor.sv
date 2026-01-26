@@ -14,7 +14,7 @@ class xor_monitor extends uvm_monitor;                                        //
     endfunction : new
 
 
-    function void build_phase(uvm_phase phase);
+    function void build_phase(uvm_phase phase);                                    //build_phase function of the xor_monitor class
         super.build_phase(phase);
         `uvm_info("Monitor Class" , "Build Phase" , UVM_LOW)
 
@@ -39,6 +39,7 @@ class xor_monitor extends uvm_monitor;                                        //
 
 
 endclass : xor_monitor
+
 
 
 
