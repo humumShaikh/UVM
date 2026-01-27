@@ -6,7 +6,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
     xor_seq_item    xor_seq_item_q[$];                                                //creating a queue for storing the incoming sequence items
 
-    xor_seq_item    I;
+    xor_seq_item    I;                                                                //creating a sequence item handle and calling it as 'I'
 
     function new(string name = "xor_scoreboard" , uvm_component parent);
         super.new(name , parent);
@@ -46,6 +46,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
 
 endclass : xor_scoreboard
+
 
 
 
