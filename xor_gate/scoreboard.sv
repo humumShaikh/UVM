@@ -4,7 +4,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
     uvm_analysis_imp #(xor_seq_item , xor_scoreboard) item_collected_export;        //creating a handle for the uvm_analysis_imp (port) for receiving transaction (sequence item) from monitor
 
-    xor_seq_item    xor_seq_item_q[$];
+    xor_seq_item    xor_seq_item_q[$];                                                //creating a queue for storing the incoming sequence items
 
     xor_seq_item    I;
 
@@ -46,5 +46,6 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
 
 endclass : xor_scoreboard
+
 
 
