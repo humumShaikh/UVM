@@ -1,4 +1,4 @@
-class xor_sequence extends uvm_sequence #(xor_seq_item);
+class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_sequence class derived from uvm_sequence class and taking as arguement an object of xor_seq_item
 
     `uvm_object_utils(xor_sequence)
 
@@ -17,6 +17,7 @@ class xor_sequence extends uvm_sequence #(xor_seq_item);
             `uvm_do(I)
         end
     endtask : body
+
 
 
 endclass : xor_sequence
