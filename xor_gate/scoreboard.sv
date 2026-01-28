@@ -10,11 +10,11 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
     function new(string name = "xor_scoreboard" , uvm_component parent);                //constructor for xor_scoreboard class
         super.new(name , parent);                                                    //constructor of xor_scoreboard class
-        `uvm_info("Scoreboard Class" , "Constructor" , UVM_LOW)
+        `uvm_info("Scoreboard Class" , "Constructor" , UVM_LOW)    
     endfunction : new
 
 
-    function void build_phase(uvm_phase phase);
+    function void build_phase(uvm_phase phase);                                        //build_phase function of xor_scoreboard class
         super.build_phase(phase);
         `uvm_info("Scoreboard Class" , "Build Phase" , UVM_LOW)
 
@@ -46,6 +46,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
 
 endclass : xor_scoreboard
+
 
 
 
