@@ -15,7 +15,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
 
     function void build_phase(uvm_phase phase);                                        //build_phase function of xor_scoreboard class
-        super.build_phase(phase);
+        super.build_phase(phase);                                                      //calling the build phase function of the parent class
         `uvm_info("Scoreboard Class" , "Build Phase" , UVM_LOW)
 
         item_collected_export = new("item_collected_export" , this);
@@ -46,6 +46,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
 
 endclass : xor_scoreboard
+
 
 
 
