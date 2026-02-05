@@ -14,7 +14,8 @@ class axi2spi_seq_item extends uvm_sequence_item;
     
     function new(string name = "axi2spi_seq_item");
         super.new(name);
-        `uvm_info("axi2spi_seq_item" , "Sequence Item Class" , UVM_MEDIUM)
+        `uvm_info("Sequence Item" , "Constructor" , UVM_MEDIUM)
     endfunction : new
+
 
 endclass : axi2spi_seq_item
