@@ -26,7 +26,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
     endfunction : write
 
 
-    task run_phase(uvm_phase phase);
+    task run_phase(uvm_phase phase);            //run task of the scoreboard class, main task here which prints the result
         forever
         begin
             wait(xor_seq_item_q.size() > 0);
@@ -46,6 +46,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
 
 endclass : xor_scoreboard
+
 
 
 
