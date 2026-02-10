@@ -21,7 +21,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
         item_collected_export = new("item_collected_export" , this);                    //allocating memory for the item_collected_export (port) of scoreboard class
     endfunction : build_phase
 
-    function void write(xor_seq_item I);
+    function void write(xor_seq_item I);          //must have this function in scoreboard class because the monitor class will call this method
         xor_seq_item_q.push_back(I);
     endfunction : write
 
@@ -46,6 +46,7 @@ class xor_scoreboard extends uvm_scoreboard;                                    
 
 
 endclass : xor_scoreboard
+
 
 
 
