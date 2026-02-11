@@ -2,7 +2,7 @@ class xor_sequencer extends uvm_sequencer #(xor_seq_item);        //deriving the
 
     `uvm_component_utils(xor_sequencer)                        //factory registration of the xor_sequencer class
 
-    function new(string name = "xor_sequencer" , uvm_component parent);
+    function new(string name = "xor_sequencer" , uvm_component parent);        //constructor for xor_sequencer class
         super.new(name , parent);
         `uvm_info("Sequencer Class" , "Constructor" , UVM_LOW)
     endfunction : new
@@ -10,4 +10,5 @@ class xor_sequencer extends uvm_sequencer #(xor_seq_item);        //deriving the
 
 
 endclass : xor_sequencer
+
 
