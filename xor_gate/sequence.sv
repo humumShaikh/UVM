@@ -2,7 +2,7 @@ class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_se
 
     `uvm_object_utils(xor_sequence)                                //uvm factory registration of the xor_sequence class
 
-    xor_seq_item    I;
+    xor_seq_item    I;                                        //creating a handle of the xor_seq_item called as 'I'
 
     function new(string name = "xor_sequence");
         super.new();
@@ -21,4 +21,5 @@ class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_se
 
 
 endclass : xor_sequence
+
 
