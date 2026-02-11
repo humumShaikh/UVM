@@ -2,11 +2,11 @@ class xor_seq_item extends uvm_sequence_item;        //xor_seq_item extending fr
 
     `uvm_object_utils(xor_seq_item)                //UVM factory registration for this class
 
-    rand    bit A;
+    rand    bit A;    
     rand    bit B;
             bit Y;
 
-    function new(string name = "xor_seq_item");
+    function new(string name = "xor_seq_item");        //constructor for the xor_seq_item class
         super.new(name);
         `uvm_info("Sequence Item Class" , "Constructor" , UVM_LOW)
     endfunction : new
@@ -14,3 +14,4 @@ class xor_seq_item extends uvm_sequence_item;        //xor_seq_item extending fr
 
 
 endclass : xor_seq_item
+
