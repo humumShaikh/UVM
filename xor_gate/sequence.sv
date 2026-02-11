@@ -1,6 +1,6 @@
 class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_sequence class derived from uvm_sequence class and taking as arguement an object of xor_seq_item
 
-    `uvm_object_utils(xor_sequence)
+    `uvm_object_utils(xor_sequence)                                //uvm factory registration of the xor_sequence class
 
     xor_seq_item    I;
 
@@ -21,3 +21,4 @@ class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_se
 
 
 endclass : xor_sequence
+
