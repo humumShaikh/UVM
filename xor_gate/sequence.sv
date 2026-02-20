@@ -11,7 +11,7 @@ class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_se
 
 
     task body();                                                //main task of the sequence class
-        repeat(8)
+        repeat(8)                                                //repeat loop , 8 indicates that 8 transaction objects will be generated
         begin
             I = xor_seq_item::type_id::create("I");
             `uvm_do(I)
@@ -21,6 +21,7 @@ class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_se
 
 
 endclass : xor_sequence
+
 
 
 
