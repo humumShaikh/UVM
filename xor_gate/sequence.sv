@@ -10,7 +10,7 @@ class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_se
     endfunction : new
 
 
-    task body();
+    task body();                                                //main task of the sequence class
         repeat(8)
         begin
             I = xor_seq_item::type_id::create("I");
@@ -21,6 +21,7 @@ class xor_sequence extends uvm_sequence #(xor_seq_item);                //xor_se
 
 
 endclass : xor_sequence
+
 
 
 
