@@ -7,11 +7,12 @@ class xor_seq_item extends uvm_sequence_item;        //xor_seq_item extending fr
             bit Y;
 
     function new(string name = "xor_seq_item");        //constructor for the xor_seq_item class
-        super.new(name);
+        super.new(name);                            //calling the base class constructor
         `uvm_info("Sequence Item Class" , "Constructor" , UVM_LOW)
     endfunction : new
     
 
 
 endclass : xor_seq_item
+
 
